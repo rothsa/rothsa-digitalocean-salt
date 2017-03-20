@@ -14,7 +14,8 @@ blueprint_config:
   file.managed:
     - name: /etc/blueprint.cfg
     - source: salt://blueprint.cfg
-    - require: blueprint
+    - require: 
+      - blueprint
 
 git_config:
   file.managed:
